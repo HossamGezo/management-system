@@ -1,0 +1,27 @@
+// Import Helpers Directory Contents
+@use "../helpers/usinghelpers" as *;
+/*
+------------------------------------
+    Inputs Styling
+------------------------------------
+*/
+.inputs {
+  padding: 1rem 0;
+  .form {
+    @include flex(column, null, center, null, 1rem);
+    .title {
+      width: 100%;
+    }
+    .operations {
+      @include flex(null, null, null, center, 1rem);
+      & *:not(:last-child) {
+        flex: 1;
+      }
+      & *:last-child {
+        background-color: color(total-color);
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+/*
+------------------------------------
+    General Styling
+------------------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  font-family: system-ui;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*
+------------------------------------
+    Components Buttons Styling
+------------------------------------
+*/
+.mybtn {
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  background-color: #420177;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.mybtn:hover {
+  background-color: #56016B;
+  letter-spacing: 0.15rem;
+}
+
+/*
+------------------------------------
+    Components Inputs Styling
+------------------------------------
+*/
+.myinput {
+  background-color: #111111;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  caret-color: white;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.myinput:focus {
+  background-color: #000000;
+  transform: scale(1.02);
+}
+.myinput::-moz-placeholder {
+  text-transform: capitalize;
+}
+.myinput::placeholder {
+  text-transform: capitalize;
+}
+
+/*
+------------------------------------
+    Header Styling
+------------------------------------
+*/
+.header {
+  padding: 1.5rem 0;
+}
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+.header h1, .header p {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.header p {
+  font-size: 1.2rem;
+}
+
+/*
+------------------------------------
+    Inputs Styling
+------------------------------------
+*/
+.inputs {
+  padding: 1rem 0;
+}
+.inputs .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.inputs .form .title {
+  width: 100%;
+}
+.inputs .form .operations {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.inputs .form .operations *:not(:last-child) {
+  flex: 1;
+}
+.inputs .form .operations *:last-child {
+  background-color: #841113;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/*
+------------------------------------
+    Outputs Styling
+------------------------------------
+*/
+.outputs {
+  padding: 1rem 0;
+}
+.outputs .search {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.outputs .search-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.outputs .search-btn * {
+  flex: 1;
+}
+.outputs .delete-all {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.outputs .table {
+  width: 100%;
+}
+.outputs .table thead tr th {
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  background-color: #841113;
+}
+.outputs .table tbody tr {
+  margin-bottom: 0.5rem;
+}
+.outputs .table tbody tr td {
+  border: 0.01rem solid;
+  border-color: transparent transparent white;
+  padding: 1rem 0.5rem;
+  text-transform: capitalize;
+}
+.outputs .table tbody tr td button {
+  padding: 0.7rem 1rem;
+}
+.outputs .table tbody tr td button:hover {
+  letter-spacing: 0.1rem;
+  scale: 1.05;
+}/*# sourceMappingURL=main.css.map */

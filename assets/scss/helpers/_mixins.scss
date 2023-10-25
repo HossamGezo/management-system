@@ -1,0 +1,20 @@
+// Import Variables And Functions Files
+@use "variables" as *;
+@use "functions" as *;
+
+// Media Mixin
+@mixin media($screen-measure) {
+  @media #{map-get($media-breakpoints, $screen-measure)} {
+    @content;
+  };
+};
+
+// Flex Mixin
+@mixin flex($direction, $wrap, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}

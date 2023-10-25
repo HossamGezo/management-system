@@ -1,0 +1,23 @@
+// Import Helpers Directory Contents
+@use "../helpers/usinghelpers" as *;
+/*
+------------------------------------
+    Header Styling
+------------------------------------
+*/
+.header {
+  padding: 1.5rem 0;
+  // border: 1px solid green;
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  h1, p {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+

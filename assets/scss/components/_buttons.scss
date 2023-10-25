@@ -1,0 +1,23 @@
+// Import Helpers Directory Contents
+@use "../helpers/usinghelpers" as *;
+/*
+------------------------------------
+    Components Buttons Styling
+------------------------------------
+*/
+.mybtn {
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  background-color: color(main-btn-color);
+  color: color(text-color);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  &:hover {
+    background-color: color(hover-btn-color);
+    letter-spacing: 0.15rem;
+  }
+}

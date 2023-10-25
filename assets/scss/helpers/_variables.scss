@@ -1,0 +1,18 @@
+// Color Breakpoints
+$color-breakpoints: (
+  main-color: #222222,
+  input-color: #111111,
+  main-btn-color: #420177,
+  hover-btn-color: #56016B,
+  total-color: #841113,
+  act-total-color: #004300,
+  text-color: #ffffff,
+  placeholder-color: #5C5C5C,
+);
+// Media Breakpoints
+$media-breakpoints: (
+  sm: "(max-width: 767px)",
+  md: "(min-width: 768px)",
+  lg: "(min-width: 991px)",
+  xl: "(min-width: 1200px)",
+)

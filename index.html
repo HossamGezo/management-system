@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Title -->
+    <title>Management System</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!-- Main Template JS File -->
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="crud">
+      <!-- 
+        ----------------------------
+          Header Section
+        ----------------------------
+      -->
+      <header class="header">
+        <div class="container">
+          <h1>cruds</h1>
+          <p>product management system</p>
+        </div>
+        <!-- // End Container -->
+      </header>
+      <!-- // End Header -->
+      <!-- 
+        ----------------------------
+          Inputs Section
+        ----------------------------
+      -->
+      <div class="inputs">
+        <div class="container">
+          <form class="form">
+            <input class="title myinput" type="text" placeholder="Title"/>
+            <div class="operations">
+              <input class="price myinput" type="number" placeholder="Price"/>
+              <input class="taxes myinput" type="number" placeholder="Taxes"/>
+              <input class="ads myinput" type="number" placeholder="Ads"/>
+              <input class="discount myinput" type="number" placeholder="Discount"/>
+              <span class="total">Total : </span>
+            </div>
+            <!-- // End Count -->
+            <input class="myinput count" type="number" placeholder="Count"/>
+            <input class="myinput category" type="text" placeholder="Category"/>
+            <button class="create mybtn">Create</button>
+          </form>
+          <!-- // End Form -->
+        </div>
+        <!-- // End Container -->
+      </div>
+      <!-- // End Inputs -->
+      <!-- 
+        ----------------------------
+          Outputs Section
+        ----------------------------
+      -->
+      <div class="outputs">
+        <div class="container">
+          <input class="search myinput" type="text" placeholder="search" onkeyup="searchData(this.value)"/>
+          <div class="search-btn">
+            <button id="searchTitle" class="search-btn__title mybtn" onclick="getSearchMood(this.id)">search by title</button>
+            <button id="searchCategory" class="search-btn__category mybtn" onclick="getSearchMood(this.id)">search by category</button>
+          </div>
+          <!-- // End Search Btn -->
+          <div id="delete-all-wrapper">
+          </div>
+          <!-- // End Delete All Wrapper -->
+          <table class="table">
+            <thead>
+              <tr class="product">
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th> 
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+              </tr>
+            </thead>
+            <!-- // End Table Head -->
+            <tbody>
+            </tbody>
+            <!-- // End Table Body -->
+          </table>
+          <!-- // End Table -->
+        </div>
+        <!-- // End Container -->
+      </div>
+      <!-- // End Outputs -->
+    </div>
+    <!-- // End Crud -->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+// Import Helpers Directory Contents
+@use "../helpers/usinghelpers" as *;
+/*
+------------------------------------
+    Components Inputs Styling
+------------------------------------
+*/
+.myinput {
+  background-color: color(input-color);
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  caret-color: white;
+  color: white;
+  transition: 0.3s ease-in-out;
+  &:focus {
+    background-color: #000000;
+    transform: scale(1.02);
+  }
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}

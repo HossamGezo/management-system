@@ -1,0 +1,55 @@
+// Import Helpers Directory Contents
+@use "../helpers/usinghelpers" as *;
+/*
+------------------------------------
+    Outputs Styling
+------------------------------------
+*/
+.outputs {
+  padding: 1rem 0;
+  .search {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .search-btn {
+    @include flex(null, null, space-between, center, 1rem);
+    margin-bottom: 1rem;
+    * {
+      flex: 1;
+    }
+  }
+  .delete-all {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .table {
+    width: 100%;
+    thead {
+      tr {
+        th {
+          padding: 1rem 0.5rem;
+          text-transform: uppercase;
+          background-color: color(total-color);
+        }
+      }
+    }
+    tbody {
+      tr {
+        margin-bottom: 0.5rem;
+        td {
+          border: 0.01rem solid;
+          border-color: transparent transparent white;
+          padding: 1rem 0.5rem;
+          text-transform: capitalize;
+          button {
+            padding: 0.7rem 1rem;
+            &:hover {
+              letter-spacing: 0.1rem;
+              scale: 1.05;
+            }
+          }
+        }
+      }
+    }
+  }
+}
